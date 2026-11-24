@@ -1,0 +1,97 @@
+<!doctype html>
+<html lang="es">
+<head>
+<!-- Google Tag Manager -->
+<script>(function(w,d,s,l,i){w[l]=w[l]||[];w[l].push({'gtm.start':
+new Date().getTime(),event:'gtm.js'});var f=d.getElementsByTagName(s)[0],
+j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
+'https://www.googletagmanager.com/gtm.js?id='+i+dl;f.parentNode.insertBefore(j,f);
+})(window,document,'script','dataLayer','GTM-KX76XF8R');</script>
+<!-- End Google Tag Manager -->
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Matemática actuarial</title>
+<meta name="claude:viewport-fit-sides" content="cover">
+<meta name="description" content="La matemática de los seguros de personas: demografía y proyecciones de población, la mortalidad como variable aleatoria, tablas y leyes de mortalidad, seguros y rentas vitalicias, primas netas y comerciales, reservas matemáticas y los seguros sobre varias vidas, contingentes y reversibles.">
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+<link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
+<link rel="stylesheet" href="assets/style.css">
+</head>
+<body>
+<!-- Google Tag Manager (noscript) -->
+<noscript><iframe src="https://www.googletagmanager.com/ns.html?id=GTM-KX76XF8R"
+height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
+<!-- End Google Tag Manager (noscript) -->
+<div class="wrap" data-page="index">
+<header class="topbar"><a class="brand" href="index.html">Matemática <b>actuarial</b></a><span class="eyebrow">Curso visual e interactivo · Matemática</span><a class="al-sitio" href="https://aaramirez.github.io/">← Todos los cursos</a></header>
+<div class="layout">
+<nav class="toc" id="toc" aria-label="Ruta de aprendizaje"></nav>
+<main>
+
+<p class="aviso-curado" role="note">El material de Matemática está en proceso de curado: puede tener errores.</p>
+<header class="hero">
+  <span class="eyebrow">Curso visual e interactivo · Matemática</span>
+  <h1>Nadie sabe cuándo va a morir una persona; mil personas son otra historia</h1>
+  <p class="lede">Un seguro de vida promete pagar en una fecha que nadie conoce. La matemática actuarial lo resuelve juntando dos cosas: el valor del dinero en el tiempo y la duración de la vida tratada como una variable aleatoria. El curso parte de cómo se mide una población y una tabla de mortalidad, y llega al cálculo de primas y reservas de seguros sobre una y varias vidas, con cada fórmula demostrada y graficada.</p>
+</header>
+
+<section>
+  <h2>Cómo usar este curso</h2>
+  <div class="prose">
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para quien ya leyó Matemática financiera (rentas ciertas, fuerza de interés y reservas de un título de capitalización) y Probabilidad (variables aleatorias, esperanza, varianza y distribuciones conjuntas). Aquí se combinan las dos. La tarificación con datos y los sistemas de una aseguradora están en Ciencia de datos actuariales.</p>
+    <p><b>Cómo está hecho.</b> Un hilo recorre el curso: una persona de 35 años que contrata, a lo largo de los capítulos, un seguro temporal, una renta de jubilación y, con su pareja, un seguro sobre dos vidas. Los laboratorios dejan mover la edad, la tasa y la ley de mortalidad y ver la prima o la reserva cambiar; las prácticas usan R (`lifecontingencies`, `demography`) o Python (NumPy, `pandas`) con tablas públicas como la *Human Mortality Database*. Habilita Teoría del riesgo.</p>
+  </div>
+</section>
+
+<details class="stage" id="temario" open><summary><h2><span class="pn">Empieza aquí</span> Tabla de contenido</h2></summary>
+  <div class="mods">
+    <a class="mod" href="temario.html"><span class="n">≡</span><b>Tabla de contenido</b><p>Cada capítulo con sus secciones y sus laboratorios.</p></a>
+  </div>
+</details>
+
+<details class="stage" id="parte-1" open><summary><h2><span class="pn">Parte 1</span> Población</h2><span class="cuenta" data-etapa-cuenta="1"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="demografia"><span class="n">01</span><b>Naturaleza y método de la demografía: fuentes y composición de la población</b><p>Qué es una población para el demógrafo, de dónde salen los datos y cómo se describe su estructura.</p></div>
+    <div class="mod soon" data-id="componentes-del-crecimiento"><span class="n">02</span><b>Componentes del crecimiento: fecundidad, mortalidad y migración</b><p>Las tasas que miden cada componente y la ecuación que los suma.</p></div>
+    <div class="mod soon" data-id="proyecciones-de-poblacion"><span class="n">03</span><b>Proyecciones de población</b><p>De los modelos de crecimiento simples al método de componentes y la matriz de Leslie.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-2" open><summary><h2><span class="pn">Parte 2</span> La mortalidad como variable aleatoria</h2><span class="cuenta" data-etapa-cuenta="2"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="funcion-de-supervivencia"><span class="n">04</span><b>Fundamentos de la teoría de la mortalidad: la función de supervivencia</b><p>La vida futura Tₓ, la supervivencia, la fuerza de mortalidad y la esperanza de vida.</p></div>
+    <div class="mod soon" data-id="tablas-de-mortalidad"><span class="n">05</span><b>Tablas de mortalidad: construcción, edades fraccionarias y tablas selectas</b><p>La tabla como resumen de una cohorte, cómo se construye y cómo se interpola entre edades enteras.</p></div>
+    <div class="mod soon" data-id="leyes-de-mortalidad-y-poblacion"><span class="n">06</span><b>Leyes de mortalidad y teoría de la población</b><p>De Moivre, Gompertz, Makeham y Weibull, y las poblaciones estacionaria y estable.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-3" open><summary><h2><span class="pn">Parte 3</span> Seguros y rentas sobre una vida</h2><span class="cuenta" data-etapa-cuenta="3"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="seguros-de-muerte"><span class="n">07</span><b>Primas únicas de los seguros de muerte y de vida</b><p>El valor actual actuarial como esperanza de un valor actual aleatorio, seguro por seguro.</p></div>
+    <div class="mod soon" data-id="rentas-vitalicias"><span class="n">08</span><b>Rentas vitalicias</b><p>Pagos mientras la persona vive: anticipadas, vencidas, fraccionadas, continuas, garantizadas y completas.</p></div>
+    <div class="mod soon" data-id="primas-netas"><span class="n">09</span><b>Prima natural, prima nivelada y la pérdida del asegurador</b><p>El principio de equivalencia, las primas anuales y la variable pérdida con su riesgo.</p></div>
+    <div class="mod soon" data-id="reservas-matematicas"><span class="n">10</span><b>Reservas matemáticas</b><p>Prospectiva, retrospectiva y por recurrencia, la ecuación de Thiele y el teorema de Lidstone.</p></div>
+    <div class="mod soon" data-id="primas-comerciales"><span class="n">11</span><b>Primas comerciales, valores garantizados y reservas modificadas</b><p>Los gastos y recargos, lo que se devuelve al cancelar y cómo se ajusta la reserva por los gastos iniciales.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-4" open><summary><h2><span class="pn">Parte 4</span> Varias vidas</h2><span class="cuenta" data-etapa-cuenta="4"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="grupos-de-vidas"><span class="n">12</span><b>Grupos al primer y al último fallecimiento</b><p>El estado conjunto y el del último sobreviviente, sus seguros, rentas, primas y reservas.</p></div>
+    <div class="mod soon" data-id="contingencias"><span class="n">13</span><b>Contingencias simples y compuestas</b><p>Seguros que pagan solo si las muertes ocurren en cierto orden.</p></div>
+    <div class="mod soon" data-id="rentas-reversibles"><span class="n">14</span><b>Rentas reversibles</b><p>Rentas que empiezan a pagarse a una persona cuando otra muere, como una pensión de sobreviviente.</p></div>
+  </div>
+</details>
+
+
+
+<nav class="pager" id="pager" aria-label="Capítulo anterior y siguiente"></nav>
+</main>
+</div>
+<footer><span>Curso abierto de aaramirez.github.io.</span><span>Sitio publicado: <a href="https://github.com/aaramirez/mate-matematica-actuarial" target="_blank" rel="noopener">github.com/aaramirez/mate-matematica-actuarial</a></span></footer>
+</div>
+<script src="assets/lab.js"></script>
+</body>
+</html>
