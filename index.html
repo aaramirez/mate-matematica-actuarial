@@ -12,7 +12,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
 <title>Matemática actuarial</title>
 <meta name="claude:viewport-fit-sides" content="cover">
-<meta name="description" content="La matemática de los seguros de personas: demografía y proyecciones de población, la mortalidad como variable aleatoria, tablas y leyes de mortalidad, seguros y rentas vitalicias, primas netas y comerciales, reservas matemáticas y los seguros sobre varias vidas, contingentes y reversibles.">
+<meta name="description" content="La matemática de los seguros de personas: demografía y proyecciones de población, la mortalidad como variable aleatoria, tablas y leyes de mortalidad, seguros y rentas vitalicias, primas netas y comerciales, reservas matemáticas, seguros sobre varias vidas, graduación y proyección de la mortalidad, decrementos múltiples y modelos multiestado, financiamiento de pensiones, la medición según NIIF 17 y la proyección de carteras con escenarios económicos.">
 <link rel="preconnect" href="https://fonts.googleapis.com">
 <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Bricolage+Grotesque:opsz,wght@12..96,500;12..96,700;12..96,800&family=JetBrains+Mono:wght@400;600&family=Source+Serif+4:ital,opsz,wght@0,8..60,400;0,8..60,600;1,8..60,400;1,8..60,600&display=swap">
@@ -33,15 +33,15 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 <header class="hero">
   <span class="eyebrow">Curso visual e interactivo · Matemática</span>
   <h1>Nadie sabe cuándo va a morir una persona; mil personas son otra historia</h1>
-  <p class="lede">Un seguro de vida promete pagar en una fecha que nadie conoce. La matemática actuarial lo resuelve juntando dos cosas: el valor del dinero en el tiempo y la duración de la vida tratada como una variable aleatoria. El curso parte de cómo se mide una población y una tabla de mortalidad, y llega al cálculo de primas y reservas de seguros sobre una y varias vidas, con cada fórmula demostrada y graficada.</p>
+  <p class="lede">Un seguro de vida promete pagar en una fecha que nadie conoce. La matemática actuarial lo resuelve juntando dos cosas: el valor del dinero en el tiempo y la duración de la vida tratada como una variable aleatoria. El curso parte de cómo se mide una población y una tabla de mortalidad, pasa por el cálculo de primas y reservas de seguros sobre una y varias vidas, y llega a lo que hace un actuario con datos reales: graduar y proyectar la mortalidad, modelar la invalidez y la caída de cartera, financiar un plan de pensiones, medir contratos según NIIF 17 y proyectar una cartera bajo escenarios económicos. Cada fórmula, demostrada y graficada.</p>
 </header>
 
 <section>
   <h2>Cómo usar este curso</h2>
   <div class="prose">
-    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 14 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
-    <p><b>Para quién es.</b> Para quien ya leyó Matemática financiera (rentas ciertas, fuerza de interés y reservas de un título de capitalización) y Probabilidad (variables aleatorias, esperanza, varianza y distribuciones conjuntas). Aquí se combinan las dos. La tarificación con datos y los sistemas de una aseguradora están en Ciencia de datos actuariales.</p>
-    <p><b>Cómo está hecho.</b> Un hilo recorre el curso: una persona de 35 años que contrata, a lo largo de los capítulos, un seguro temporal, una renta de jubilación y, con su pareja, un seguro sobre dos vidas. Los laboratorios dejan mover la edad, la tasa y la ley de mortalidad y ver la prima o la reserva cambiar; las prácticas usan R (`lifecontingencies`, `demography`) o Python (NumPy, `pandas`) con tablas públicas como la *Human Mortality Database*. Habilita Teoría del riesgo.</p>
+    <p><b>Estado.</b> El curso está en preparación. La <a href="temario.html">tabla de contenido</a> ya tiene los 21 capítulos con sus secciones y sus laboratorios, y está en revisión.</p>
+    <p><b>Para quién es.</b> Para quien ya leyó Matemática financiera (rentas ciertas, fuerza de interés y reservas de un título de capitalización) y Probabilidad (variables aleatorias, esperanza, varianza y distribuciones conjuntas). Aquí se combinan las dos. Para las partes 5 y 6 ayudan las cadenas de Markov en tiempo continuo (Procesos estocásticos), la descomposición en valores singulares (Álgebra lineal avanzada) y ARIMA (Series de tiempo); cada capítulo dice qué leer. La tarificación con datos y las plataformas y sistemas de una aseguradora están en Ciencia de datos actuariales; la solvencia y el capital, en Teoría del riesgo.</p>
+    <p><b>Cómo está hecho.</b> Un hilo recorre el curso: una persona de 35 años que contrata, a lo largo de los capítulos, un seguro temporal, una renta de jubilación y, con su pareja, un seguro sobre dos vidas; después, una cobertura de invalidez y el plan de pensiones de su empleador, y su póliza vista dentro de la cartera que la aseguradora gradúa, proyecta, reporta según NIIF 17 y simula bajo miles de escenarios. Cada capítulo trae demostraciones y de cuatro a cinco laboratorios que dejan mover la edad, la tasa, la ley de mortalidad o un supuesto y ver la prima, la reserva o el pasivo cambiar; las prácticas usan R (`lifecontingencies`, `demography`, `StMoMo`) o Python (NumPy, `pandas`, SciPy) con tablas públicas como la *Human Mortality Database*. Habilita Teoría del riesgo.</p>
   </div>
 </section>
 
@@ -82,6 +82,23 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     <div class="mod soon" data-id="grupos-de-vidas"><span class="n">12</span><b>Grupos al primer y al último fallecimiento</b><p>El estado conjunto y el del último sobreviviente, sus seguros, rentas, primas y reservas.</p></div>
     <div class="mod soon" data-id="contingencias"><span class="n">13</span><b>Contingencias simples y compuestas</b><p>Seguros que pagan solo si las muertes ocurren en cierto orden.</p></div>
     <div class="mod soon" data-id="rentas-reversibles"><span class="n">14</span><b>Rentas reversibles</b><p>Rentas que empiezan a pagarse a una persona cuando otra muere, como una pensión de sobreviviente.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-5" open><summary><h2><span class="pn">Parte 5</span> Mortalidad con datos y modelos de varios estados</h2><span class="cuenta" data-etapa-cuenta="5"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="graduacion-de-tasas"><span class="n">15</span><b>Graduación de tasas brutas de mortalidad</b><p>Cómo pasar de tasas observadas, ruidosas y con huecos, a una tabla suave que sigue respetando los datos.</p></div>
+    <div class="mod soon" data-id="proyeccion-de-mortalidad"><span class="n">16</span><b>Proyección de mortalidad y riesgo de longevidad</b><p>La mortalidad baja año tras año: cómo se proyecta con Lee-Carter y sus parientes, y cuánto cuesta equivocarse.</p></div>
+    <div class="mod soon" data-id="decrementos-multiples"><span class="n">17</span><b>Tablas de decrementos múltiples: muerte, invalidez y caída de cartera</b><p>Cuando una póliza o un afiliado puede salir por varias causas que compiten entre sí.</p></div>
+    <div class="mod soon" data-id="modelos-multiestado"><span class="n">18</span><b>Modelos multiestado: morbilidad, invalidez y las ecuaciones de Thiele y Kolmogorov</b><p>Sano, inválido, muerto y caducado como estados de una cadena de Markov, con sus primas y sus reservas.</p></div>
+  </div>
+</details>
+
+<details class="stage" id="parte-6" open><summary><h2><span class="pn">Parte 6</span> Pensiones, contabilidad y proyección de carteras</h2><span class="cuenta" data-etapa-cuenta="6"></span></summary>
+  <div class="mods">
+    <div class="mod soon" data-id="financiamiento-de-pensiones"><span class="n">19</span><b>Financiamiento de pensiones: métodos de costeo, pasivo actuarial y déficit</b><p>Cuánto aportar cada año a un plan de beneficio definido, cuánto se debe hoy y cómo se paga un déficit.</p></div>
+    <div class="mod soon" data-id="medicion-niif-17"><span class="n">20</span><b>La medición de contratos según NIIF 17 (IFRS 17): flujos de cumplimiento y margen de servicio contractual</b><p>La matemática detrás de la norma: cómo se mide un grupo de contratos y cómo se libera su ganancia en el tiempo.</p></div>
+    <div class="mod soon" data-id="escenarios-economicos-y-model-points"><span class="n">21</span><b>Generadores de escenarios económicos y *model points* para la proyección actuarial</b><p>Cómo se proyecta una cartera entera bajo miles de futuros económicos posibles sin que el cálculo tarde una semana.</p></div>
   </div>
 </details>
 

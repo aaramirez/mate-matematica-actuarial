@@ -22,3 +22,10 @@ Este repositorio solo tiene el sitio generado. El curso está en preparación: l
 | 12 | Grupos al primer y al último fallecimiento |
 | 13 | Contingencias simples y compuestas |
 | 14 | Rentas reversibles |
+| 15 | Graduación de tasas brutas de mortalidad |
+| 16 | Proyección de mortalidad y riesgo de longevidad |
+| 17 | Tablas de decrementos múltiples: muerte, invalidez y caída de cartera |
+| 18 | Modelos multiestado: morbilidad, invalidez y las ecuaciones de Thiele y Kolmogorov |
+| 19 | Financiamiento de pensiones: métodos de costeo, pasivo actuarial y déficit |
+| 20 | La medición de contratos según NIIF 17 (IFRS 17): flujos de cumplimiento y margen de servicio contractual |
+| 21 | Generadores de escenarios económicos y *model points* para la proyección actuarial |
